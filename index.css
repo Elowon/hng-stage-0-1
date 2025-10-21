@@ -1,6 +1,5 @@
 body {
   min-height: 100vh;
-	background: #2e2c2cc9;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -268,5 +267,6 @@ body {
   .likes-dislikes div {
     min-width: 200px;
   }
+
 
 }
