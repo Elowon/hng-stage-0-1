@@ -40,10 +40,15 @@ profile-card/
 🛠️ TECHNOLOGIES USED-
 
 HTML5 - Semantic structure and accessibility
+
 CSS3 – Responsive styling with Flexbox and media queries
+
 Vanilla JavaScript (ES6+) - DOM manipulation, interactivity, and form validation
+
 Data-testid Attributes – Seamless integration with automated UI testing tools
+
 Responsive Design Principles - Mobile-first approach for cross-device compatibility
+
 
 ⚙️ How to Run Locally-
 
