@@ -1,0 +1,133 @@
+
+body {
+    padding: 50px 0;
+    width: 500px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #111 ;
+    margin: auto;
+}
+
+.form-container {
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: rgb(53, 53, 153);
+    text-align: center;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+form {
+    margin: 10px 0;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-size: 16px;
+    color: #333;
+    align-self: center;
+}
+
+.form-control {
+    display: grid;
+    grid-template-columns: 120px auto;
+    position: relative;
+}
+
+.form-control textarea
+ {
+    padding-left: 10px;
+    border-radius: 6px;
+    border: lightgray 1px solid;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.form-control textarea {
+    padding-top: 10px;
+}
+
+button.btn {
+    min-width: 150px;
+    height: 36px;
+    background-color: rgb(68, 68, 182);
+    border: #5177bb 1px solid;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button.btn:hover {
+    background-color: rgb(114, 114, 187); ;
+}
+input, textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: grey 1px solid;
+}
+
+.error-message {
+    color: red;
+}
+.success-message{
+    color: blue;
+    text-align: center;
+    font-weight: 500;
+}
+.form-control p{
+    text-align: left;
+}
+
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  display: flex;
+}
+
+.top-nav {
+position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.links-order { 
+  margin: 0 ;           
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  list-style: none;
+  padding: 15px 20px;
+  gap: 20px;
+}
+
+.links-order li a {
+  color: rgba(236, 81, 42, 0.801);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+.links-order li a:hover {
+  color: rgb(27, 27, 71);
+}
