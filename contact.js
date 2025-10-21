@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             errors.message.textContent = "Please enter your message"
         }else if(fields.message.value.trim() < 10) {
             errors.message.textContent = "Message must be morethan 10 characters"
+            valid = false;
         }
 
         if(fields.subject.value.trim() === ""){
@@ -58,4 +59,5 @@ document.addEventListener("DOMContentLoaded", () =>{
             form.reset()
         }
     })
+
 })
