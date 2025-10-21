@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-nav">
+      <ul class="links-order">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </header>
+
+    <main class="profile-content">
+      <article
+        class="profile-card animate__animated animate__fadeIn"
+        id="profileCard"
+        data-testid="test-profile-card"
+      >
+        <header class="profile-header">
+          <figure class="user-avatar">
+            <img
+              id="user-avatar"
+              alt="User-avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+
+          <div class="username-userbio">
+            <h2 class="user-name" data-testid="test-user-name">
+              <b>Hillary_Elo</b>
+            </h2>
+            <p class="user-bio" data-testid="test-user-bio">
+              I am a Web Developer with experience in building responsive and
+              user-friendly websites.
+            </p>
+          </div>
+        </header>
+
+        <section>
+          <p class="user-time" data-testid="test-user-time"></p>
+        </section>
+
+        <section class="profile-details">
+          <article class="likes-dislikes">
+            <div class="user-hobbies" data-testid="test-user-hobbies">
+              <h3>HOBBIES</h3>
+              <ul>
+                <li>Reading</li>
+                <li>Swimming</li>
+                <li>Writing codes</li>
+                <li>Movies</li>
+              </ul>
+            </div>
+
+            <div class="user-dislikes" data-testid="test-user-dislikes">
+              <h3>DISLIKES</h3>
+              <ul>
+                <li>Clubbing</li>
+                <li>Flirting</li>
+                <li>Wasting time</li>
+                <li>Ironing</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="interactive-counter"
+            data-testid="test-interactive-counter"
+          >
+            <p>
+              <strong>Followers:</strong>
+              <span id="followersCount">500</span>
+            </p>
+            <button onclick="followersCountFn()">Follow +</button>
+          </article>
+
+          <nav
+            class="user-social-links"
+            aria-label="Social media links"
+            data-testid="test-user-social-links"
+          >
+            <a
+              href="https://web.facebook.com/?_rdc=1&_rdr#"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Visit facebook profile"
+              data-testid="test-user-social-facebook"
+            >
+              <i class="fab fa-facebook" style="color: #1877f2"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Visit twitter profile"
+              data-testid="test-user-social-twitter"
+            >
+              <i class="fab fa-twitter" style="color: #1da1f2"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Visit instagram profile"
+              data-testid="test-user-social-instagram"
+            >
+              <i class="fab fa-instagram" style="color: #e1306c"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Visit LinkedIn profile"
+              data-testid="test-user-social-linkedin"
+            >
+              <i class="fab fa-linkedin" style="color: #0077b5"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/results?search_query=how+to+set+default+browser+in+vs+code"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Visit youtube profile"
+              data-testid="test-user-social-youtube"
+            >
+              <i class="fab fa-youtube" style="color: #c4302b"></i>
+            </a>
+          </nav>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

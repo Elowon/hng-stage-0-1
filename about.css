@@ -1,0 +1,90 @@
+main {
+    margin: 50px;
+    padding: 10px;
+}
+
+h3 {
+    font-weight: 700;
+    color: aquamarine;
+}
+
+section {
+    line-height: 1.5em;
+    background-color: blueviolet;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 10px;
+
+}
+p {
+    color: azure;
+}
+h2 {
+    color: rgb(55, 21, 87);
+    text-align: center;
+}
+
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  display: flex;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.links-order {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 15px 20px;
+  gap: 20px;
+}
+
+.links-order li a {
+  color: rgba(236, 81, 42, 0.801);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+.links-order li a:hover {
+  color: rgb(27, 27, 71);
+}
+
+
+@media only screen and (max-width:500px) {
+    section {
+    width: 60%;
+    
+}
+}
+
+@media only screen and (max-width:800px) {
+    section {
+    width: 70%;
+    
+}
+}
+@media only screen and (max-width:1020px) {
+    section {
+    width: 80%;
+    
+}
+}
+
+
